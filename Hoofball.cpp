@@ -46,9 +46,9 @@ int main()
             i++;
             rcount++;
         }
-        if (lcount > 1 && rcount> 1)
+        if (lcount > 1 && rcount> 1) //add 2 when we know we have to go all the way left and right (two-way)
             count += 2;
-        else
+        else //since there's only one exception a neighboring cow will pass to it since we have a change in sequence from F->T so right<-left
             count++;
     }
  
